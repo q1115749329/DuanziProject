@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}待秋·笑话{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.css" %}">
+    <script src="{% static "bootstrap/js/jquery-3.3.1.min.js" %}"></script>
+    <script src="{% static "bootstrap/js/bootstrap.js" %}"></script>
+
+    {% block my_css %}
+    {% endblock %}
+    {% block my_js %}
+    {% endblock %}
+</head>
+
+<body>
+{% block head %}
+    <nav class="navbar navbar-collapse" style="background-color: aqua">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="navbar-brand" href="#">待秋·笑话</span>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+             <span class="navbar-brand" href="#">
+        <img alt="Brand" src="{% static "imgs/1.jpg" %}" style="width: 30px;height: 30px">
+
+             </span>
+                </li>
+                <li><span class="navbar-brand">QQ:1115749329</span></li>
+            </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+        </div><!-- /.container-fluid -->
+    </nav>
+{% endblock %}
+{% block content %}
+{% endblock %}
+{% block footer %}
+{% endblock %}
+</body>
+{% block my_js_code %}
+{% endblock %}
+</html>
